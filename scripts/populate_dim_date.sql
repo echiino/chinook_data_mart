@@ -133,7 +133,3 @@ BEGIN
 END//
 
 CALL PopulateDateDimension('2000-01-01', '2030-12-31');
-
-SELECT MIN(full_date) AS BeginDate
-	, MAX(full_date) AS EndDate
-FROM dim_date;
