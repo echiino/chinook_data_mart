@@ -1,4 +1,4 @@
-# DS2002 Midterm Project - Chinook Data Mart
+# DS-2002 Midterm Project - Chinook Data Mart
 
 ## Overview
 This project builds a small data mart using data from:
