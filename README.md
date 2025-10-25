@@ -15,5 +15,5 @@ The mart is loaded into MySQL (`chinook_dw`) and includes:
 
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/chinook_data_mart.git
+git clone https://github.com/echiino/chinook_data_mart.git
 cd chinook_data_mart
