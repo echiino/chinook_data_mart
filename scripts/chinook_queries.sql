@@ -5,7 +5,7 @@ SELECT
     c.FirstName AS first_name,
     c.LastName AS last_name,
     SUM(f.Quantity) AS total_quantity,
-    SUM(f.Quantity * f.UnitPrice) AS total_sales
+    SUM(f.Quantity * f.UnitPrice) AS total_revenue
 FROM chinook_dw.fact_sales f
 JOIN chinook_dw.dim_customer c
     ON f.customer_key = c.customer_key
