@@ -1,10 +1,16 @@
 # DS-2002 Midterm Project - Chinook Data Mart
 
-## Overview
+## About Chinook
+
+The Chinook data model represents a digital media store. It includes tables for artists, albums, media tracks, invoices, and customers.
+
+https://github.com/lerocha/chinook-database
+
+## Project Overview
 This project builds a small data mart using data from:
-- MySQL database `chinook`
+- MySQL database `chinook_mysql.sql`
 - MongoDB JSON file `chinook_customer.json`
-- CSV file `mediatype.csv`
+- CSV file `chinook_mediatype.csv`
 
 The mart is loaded into MySQL (`chinook_dw`) and includes:
 - dim_customer
