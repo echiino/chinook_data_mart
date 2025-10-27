@@ -65,7 +65,7 @@ Data was extracted from three different sources to satisfy project requirements:
 ### Deployment Strategy:
 
 - The ETL pipeline is implemented in a Jupyter Notebook: **`chinook_ETL.ipynb`**.  
-- Running the notebook end-to-end will recreate the entire data mart from raw sources.
+- Running the notebook end-to-end will recreate the data mart.
   - However, make sure to execute the included SQL script **`populate_dim_date.sql`** when prompted so you can successfully generate `dim_date`!  
 - Required dependencies:
   - `pandas`
