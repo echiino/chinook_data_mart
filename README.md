@@ -87,6 +87,26 @@ cd chinook_data_mart
 
 ### 2. Execute **`chinook_mysql.sql`** (found in the data folder) in MySQL to create the chinook database.
 
-### 3. Run the **`chinook_ETL.ipynb`** notebook and **`populate_dim_date.sql`** script.
+### 3. Before running the notebook, update the following connection parameters:
 
-### 4. Verify data integrity by executing **`chinook_queries.sql`**.
+```python
+# MySQL connection settings
+host_name = "localhost"
+port = "3306"
+uid = "your_mysql_username"
+pwd = "your_mysql_password"
+
+# MongoDB connection settings
+mongodb_args = {
+    "user_name" : "your_mongodb_username",
+    "password" : "your_mongodb_password",
+    "cluster_name" : "your_cluster_name",
+    "cluster_subnet" : "your_cluster_subnet",
+    "cluster_location" : "atlas",  # or "local" if running MongoDB locally
+    "db_name" : "chinook_customer"
+}
+```
+
+### 4. Run the **`chinook_ETL.ipynb`** notebook and **`populate_dim_date.sql`** script.
+
+### 5. Verify data integrity by executing **`chinook_queries.sql`**.
