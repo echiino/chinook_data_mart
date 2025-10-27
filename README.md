@@ -77,9 +77,16 @@ Data was extracted from three different sources to satisfy project requirements:
 - MySQL must be running and accessible at the configured host.
   - Make sure the username and password are your own! By default, they are configured to mine.  
 
-## Setup Instructions
+## Instructions
 
 ### 1. Clone this repo
 ```bash
 git clone https://github.com/echiino/chinook_data_mart.git
 cd chinook_data_mart
+```
+
+### 2. Execute **`chinook_mysql.sql`** (found in the data folder) in MySQL to create the chinook database.
+
+### 3. Run the **`chinook_ETL.ipynb`** notebook and **`populate_dim_date.sql`** script.
+
+### 4. Verify data integrity by executing **`chinook_queries.sql`**.
