@@ -10,7 +10,7 @@ FROM chinook_dw.fact_sales f
 JOIN chinook_dw.dim_customer c
     ON f.customer_key = c.customer_key
 GROUP BY c.FirstName, c.LastName
-ORDER BY total_sales DESC;
+ORDER BY total_revenue DESC;
 
 
 -- QUERY 2: TOTAL SALES PER TRACK (TOP SONGS)
